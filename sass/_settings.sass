@@ -1,3 +1,19 @@
 .container
   max-width: 1140px
   margin: auto
+.button
+  &:hover
+    background-color: rgba($primary, 0.75)
+    color: #fff
+.hover-link
+  position: relative
+  &:before
+    content: ''
+    width: 100%
+    position: absolute
+    bottom: -3px
+    border-bottom: solid 1px $dark
+    transition: 0.4s
+    transform: scaleX(0)
+  &:hover::before
+    transform: scale(1)

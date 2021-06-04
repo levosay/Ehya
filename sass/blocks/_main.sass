@@ -1,9 +1,70 @@
 .container--main
   display: flex
+  justify-content: space-between
+  padding-bottom: 56px
 .main
+  padding-top: 95px
   &-description
-    flex-basis: 50%
+    padding: 46px 67px 0 0
+    &__title
+      margin: 0
+      padding-right: 100px
+      padding-bottom: 28px
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      color: $dark
+      &--color
+        margin: 0
+        color: #FAAD13
+    &__subtitle
+      margin: 0
+      padding-bottom: 36px
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      color: $dark
+      text-transform: uppercase
+    &__text
+      margin: 0
+      padding-bottom: 56px
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: #5A7184
+    &__button
+      cursor: pointer
+      border-radius: 8px
+      text-transform: uppercase
+      border: 2px solid $primary
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      &--bgc-blue
+        padding: 18px 37px
+        background-color: $primary
+        color: $light
+        margin-right: 26px
+      &--bgc-white
+        padding: 18px 50px
+        background-color: $light
+        color: $primary
   &-cover
-    flex-basis: 50%
+    position: relative
+    padding: 103px 119px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: rgba(179,168,197,0.1);
     &__book
-      
+      box-shadow: 0px 20px 24px rgba(179,168,197, 0.08)
+
+
